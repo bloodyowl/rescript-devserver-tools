@@ -1,3 +1,9 @@
+## 1.0.4
+
+Fixes:
+
+- Add missing dependency (9e1a070)
+
 ## 1.0.3
 
 Fixes:
