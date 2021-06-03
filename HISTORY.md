@@ -1,3 +1,9 @@
+## 1.0.8
+
+Fixes:
+
+- Use a getter for livereload (56c1c51)
+
 ## 1.0.7
 
 Fixes:
