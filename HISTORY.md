@@ -1,3 +1,9 @@
+## 1.0.6
+
+Fixes:
+
+- Add missing dependency (a9204a2)
+
 ## 1.0.5
 
 Fixes:
