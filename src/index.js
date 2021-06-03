@@ -1,3 +1,5 @@
+let http = require("http");
+
 module.exports = function createRescriptDevserverTools(
   webpackCompilers,
   {
