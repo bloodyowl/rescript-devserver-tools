@@ -1,3 +1,9 @@
+## 1.0.9
+
+Fixes:
+
+- Better API (879798a)
+
 ## 1.0.8
 
 Fixes:
