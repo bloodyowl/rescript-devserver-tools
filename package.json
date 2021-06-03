@@ -1,0 +1,19 @@
+{
+  "name": "rescript-devserver-tools",
+  "version": "1.0.0",
+  "description": "A tool to orchestrate ReScript & Webpack in a dev server",
+  "main": "src/index.js",
+  "repository": "git@github.com:bloodyowl/rescript-devserver-tools.git",
+  "author": "Matthias Le Brun <bloodyowl@icloud.com>",
+  "license": "MIT",
+  "private": false,
+  "peerDependencies": {
+    "webpack": "^5.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "get-port": "^5.1.1",
+    "memfs": "^3.2.2",
+    "ws": "^7.4.6"
+  }
+}
