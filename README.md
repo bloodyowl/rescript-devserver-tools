@@ -2,6 +2,8 @@
 
 > A tool to orchestrate ReScript & Webpack in a dev server
 
+<img width="752" alt="Screen Shot 2021-06-03 at 14 08 41" src="https://user-images.githubusercontent.com/1688645/120642485-39827200-c475-11eb-915a-293e90dbbb5a.png">
+
 ## Installation
 
 ```console
