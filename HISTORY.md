@@ -1,3 +1,9 @@
+## 1.0.2
+
+Fixes:
+
+- Don't expose async function (15841c0)
+
 ## 1.0.1
 
 Fixes:
