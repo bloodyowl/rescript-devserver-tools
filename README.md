@@ -17,8 +17,8 @@ let createRescriptDevserverTools = require("rescript-devserver-tools");
 
 let {
   middleware,
-  liveReloadAppendix,
-  fs,
+  getLiveReloadAppendix,
+  virtualFs,
 } = createRescriptDevserverTools(webpack(config), {
   // rescriptWsPort: 9999,
   // liveReload: true,

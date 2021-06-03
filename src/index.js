@@ -208,9 +208,9 @@ module.exports = function createRescriptDevserverTools(
 
   return {
     middleware,
-    get liveReloadAppendix() {
+    getLiveReloadAppendix() {
       return liveReloadAppendix
     },
-    fs: outputFileSystem,
+    virtualFs: outputFileSystem,
   };
 };
