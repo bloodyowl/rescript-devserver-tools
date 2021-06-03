@@ -1,4 +1,4 @@
-module.exports = async function createRescriptDevserverTools(
+module.exports = function createRescriptDevserverTools(
   webpackCompilers,
   {
     rescriptWsPort = 9999,
