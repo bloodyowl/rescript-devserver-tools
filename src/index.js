@@ -4,7 +4,7 @@ module.exports = function createRescriptDevserverTools(
     rescriptWsPort = 9999,
     liveReload = true,
     liveReloadServer = http.createServer(),
-  }
+  } = {}
 ) {
   let https = require("https");
   let { createFsFromVolume, Volume } = require("memfs");
