@@ -1,5 +1,6 @@
 let http = require("http");
 let path = require("path");
+let chalk = require("chalk");
 
 module.exports = function createRescriptDevserverTools(
   webpackCompilers,
