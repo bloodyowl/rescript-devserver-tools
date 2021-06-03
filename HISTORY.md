@@ -1,3 +1,9 @@
+## 1.0.5
+
+Fixes:
+
+- Fix instanceof call (016071f)
+
 ## 1.0.4
 
 Fixes:
