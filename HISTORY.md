@@ -1,3 +1,9 @@
+## 1.0.3
+
+Fixes:
+
+- Add default options (7f10583)
+
 ## 1.0.2
 
 Fixes:
