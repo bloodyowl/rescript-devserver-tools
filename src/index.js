@@ -13,7 +13,7 @@ module.exports = async function createRescriptDevserverTools(
   let pendingBuild = null;
   let liveReloadAppendix = null;
 
-  function startDev() {
+  async function startDev() {
     let getPort = require("get-port");
     let WebSocket = require("ws");
     let shouldRebuild = false;
