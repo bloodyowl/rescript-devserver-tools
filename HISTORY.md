@@ -1,3 +1,9 @@
+## 1.0.7
+
+Fixes:
+
+- Add missing dependency (ef05d1d)
+
 ## 1.0.6
 
 Fixes:
