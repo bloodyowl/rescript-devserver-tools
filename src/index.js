@@ -41,7 +41,7 @@ module.exports = function createRescriptDevserverTools(
     }
 
     let reloadWsPort = await getPort();
-    let protocol = liveReloadServer instanceof https ? "wss://" : "ws://";
+    let protocol = liveReloadServer instanceof https.Server ? "wss://" : "ws://";
     liveReloadAppendix = liveReload
       ? `<script>new WebSocket("${protocol}" + window.location.hostname + ":${reloadWsPort}").onmessage = function() {location.reload(true)}</script>`
       : null;
