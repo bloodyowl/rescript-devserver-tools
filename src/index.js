@@ -80,13 +80,7 @@ module.exports = function createRescriptDevserverTools(
                   let errors = stats.toString("errors-warnings");
                   reject(errors);
                 } else {
-                  postWebpackBuild().then(() => {
-                    if (!isFirstRun) {
-                      reloadWs.send("change");
-                    }
-                    isFirstRun = false;
-                    resolve();
-                  });
+                  resolve();
                 }
               }
             });
@@ -98,13 +92,19 @@ module.exports = function createRescriptDevserverTools(
             shouldRebuild = false;
             return build();
           } else {
-            console.log(
-              chalk.white(new Date().toJSON()) +
-                " " +
-                chalk.blue("Webpack") +
-                " done"
-            );
-            pendingBuild = null;
+            postWebpackBuild().then(() => {
+              console.log(
+                chalk.white(new Date().toJSON()) +
+                  " " +
+                  chalk.blue("Webpack") +
+                  " done"
+              );
+              if (!isFirstRun) {
+                reloadWs.send("change");
+              }
+              isFirstRun = false;
+              pendingBuild = null;
+            });
           }
         })
         .catch((errors) => {
