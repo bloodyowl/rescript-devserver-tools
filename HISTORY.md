@@ -1,3 +1,9 @@
+## 1.0.13
+
+Changes:
+
+- Don't write node target to virtual fs (ac68d15)
+
 ## 1.0.12
 
 Fixes:
