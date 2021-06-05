@@ -1,3 +1,9 @@
+## 1.0.15
+
+Fixes:
+
+- Listen for grouped build (1ea0686)
+
 ## 1.0.14
 
 Fixes:
