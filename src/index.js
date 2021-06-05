@@ -116,7 +116,7 @@ module.exports = function createRescriptDevserverTools(
           );
           console.error(
             "\n" +
-              errors
+              String(errors)
                 .split("\n")
                 .filter(
                   (line) => line !== "" && !line.startsWith("webpack compiled")
