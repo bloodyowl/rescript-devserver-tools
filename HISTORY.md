@@ -1,3 +1,9 @@
+## 1.0.12
+
+Fixes:
+
+- Fix reload function (1dfd288)
+
 ## 1.0.11
 
 Features:
