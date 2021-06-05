@@ -1,3 +1,9 @@
+## 1.0.14
+
+Fixes:
+
+- Handle non-string errors (956764e)
+
 ## 1.0.13
 
 Changes:
