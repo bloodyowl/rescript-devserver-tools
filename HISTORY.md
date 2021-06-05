@@ -1,3 +1,9 @@
+## 1.0.10
+
+Features:
+
+- Provide a function to trigger livereload (aec4511)
+
 ## 1.0.9
 
 Fixes:
