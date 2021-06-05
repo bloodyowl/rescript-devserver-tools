@@ -1,6 +1,6 @@
 {
   "name": "rescript-devserver-tools",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "A tool to orchestrate ReScript & Webpack in a dev server",
   "main": "src/index.js",
   "repository": "git@github.com:bloodyowl/rescript-devserver-tools.git",
