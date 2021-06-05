@@ -1,3 +1,9 @@
+## 1.0.11
+
+Features:
+
+- Add post build hook (2751e7c)
+
 ## 1.0.10
 
 Features:
