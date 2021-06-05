@@ -8,6 +8,7 @@ module.exports = function createRescriptDevserverTools(
     rescriptWsPort = 9999,
     liveReload = true,
     liveReloadServer = http.createServer(),
+    postWebpackBuild = () => Promise.resolve(),
   } = {}
 ) {
   let https = require("https");
@@ -76,11 +77,13 @@ module.exports = function createRescriptDevserverTools(
                   let errors = stats.toString("errors-warnings");
                   reject(errors);
                 } else {
-                  if (!isFirstRun) {
-                    reloadWs.send("change");
-                  }
-                  isFirstRun = false;
-                  resolve();
+                  postWebpackBuild().then(() => {
+                    if (!isFirstRun) {
+                      reloadWs.send("change");
+                    }
+                    isFirstRun = false;
+                    resolve();
+                  });
                 }
               }
             });
