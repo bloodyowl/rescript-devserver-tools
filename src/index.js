@@ -17,6 +17,7 @@ module.exports = function createRescriptDevserverTools(
   let outputFileSystem = createFsFromVolume(volume);
   let pendingBuild = null;
   let liveReloadAppendix = null;
+  let reloadWs;
 
   async function startDev() {
     let getPort = require("get-port");
@@ -52,7 +53,7 @@ module.exports = function createRescriptDevserverTools(
 
     let isFirstRun = true;
 
-    let reloadWs = await createWebsocketServer(reloadWsPort);
+    reloadWs = await createWebsocketServer(reloadWsPort);
 
     outputFileSystem.join = path.join.bind(path);
     let compilers = Array.isArray(webpackCompilers)
@@ -217,7 +218,9 @@ module.exports = function createRescriptDevserverTools(
     },
     virtualFs: outputFileSystem,
     triggerLiveReload() {
-      reloadWs.send("change");
+      if (reloadWs) {
+        reloadWs.send("change");
+      }
     },
   };
 };
