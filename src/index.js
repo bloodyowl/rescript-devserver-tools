@@ -69,7 +69,9 @@ module.exports = function createRescriptDevserverTools(
       return (pendingBuild = Promise.all(
         compilers.map((compiler) => {
           return new Promise((resolve, reject) => {
-            compiler.outputFileSystem = outputFileSystem;
+            if (compiler.options.target !== "node") {
+              compiler.outputFileSystem = outputFileSystem;
+            }
             compiler.run((error, stats) => {
               if (error) {
                 reject(error);
