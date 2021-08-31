@@ -1,3 +1,9 @@
+## 1.0.16
+
+Changes:
+
+- Update WS (20370bc)
+
 ## 1.0.15
 
 Fixes:
